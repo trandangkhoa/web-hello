@@ -4,14 +4,30 @@
 
 <web-app>
 	<display-name>Archetype Created Web Application</display-name>
-
 	<servlet>
+		<servlet-name>jersey-serlvet</servlet-name>
+		<servlet-class>
+			com.sun.jersey.spi.container.servlet.ServletContainer
+		</servlet-class>
+		<init-param>
+			<param-name>com.sun.jersey.config.property.packages</param-name>
+			<param-value>server.module.service</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>jersey-serlvet</servlet-name>
+		<url-pattern>/service/*</url-pattern>
+	</servlet-mapping>
+	
+	<!-- <servlet>
 		<servlet-name>EntityService</servlet-name>
 		<servlet-class>server.module.service.EntityServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>EntityService</servlet-name>
 		<url-pattern>/entityservice</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping> -->
 
 </web-app>
