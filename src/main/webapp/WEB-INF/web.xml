@@ -4,7 +4,7 @@
 
 <web-app>
 	<display-name>Archetype Created Web Application</display-name>
-	<servlet>
+	<!-- <servlet>
 		<servlet-name>jersey-serlvet</servlet-name>
 		<servlet-class>
 			com.sun.jersey.spi.container.servlet.ServletContainer
@@ -19,7 +19,7 @@
 	<servlet-mapping>
 		<servlet-name>jersey-serlvet</servlet-name>
 		<url-pattern>/service/*</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping> -->
 	
 	<!-- <servlet>
 		<servlet-name>EntityService</servlet-name>
